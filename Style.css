@@ -1,15 +1,11 @@
 .title{
     color: blueviolet;
     text-align: left;
+    font-family:
 }
 .intro-img{
     height: 300px;
 }
-.story-img{
-
-}
-* {box-sizing:border-box}
-
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
