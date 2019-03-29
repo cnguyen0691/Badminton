@@ -13,9 +13,31 @@ function insert_value() {
     $("#resetForm").reset();
 }
 function ctrlq(e) {
+    alert('We will get back to you soon')
+}
+
+
+
+//register form
+var script_url1 = "https://script.google.com/macros/s/AKfycbypHcl7WNjaydV6NA55tRnHJwBTAuv4nJpsrTje6o1TkUeD3F4a/exec";
+function insert_value2() {
+    var firstname = $("#firstname").val();
+    var lastname = $("#lastname").val();
+    var email1 = $("#email1").val();
+    var dob = $("#dob").val();
+    var phone = $("#phone").val();
+    var sessions = $("#sessions").val();
+    var url1 = script_url1 + "?callback=ctrlq&firstname=" + firstname + "&lastname=" + lastname + "&email1=" + email1 + "&dob=" + dob + "&phone=" + phone + "&sessions=" + sessions + "&action=insert";
+    var request1 = jQuery.ajax({
+        crossDomain: true,
+        url: url1,
+        method: "GET",
+        dataType: "jsonp"
+    });
+    $("#resetForm1").reset();
+}
+function ctrlq(e) {
     alert('Congrats! Registered Successfully')
 }
 
 (jQuery,document,window);
-
-

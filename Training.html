@@ -189,20 +189,97 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Register form</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
+          <div class="container">
+          <h2>Registration form</h2>
+          <form action="javascript:;" id="resetForm1" onsubmit="insert_value2()">
+                <div class="form-group">
+                    <label for="firstname" class="col-sm-3 control-label">First Name</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="firstname" placeholder="First Name" class="form-control" autofocus>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="lastname" class="col-sm-3 control-label">Last Name</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="lastname" placeholder="Last Name" class="form-control" autofocus>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email1" class="col-sm-3 control-label">Email* </label>
+                    <div class="col-sm-9">
+                        <input type="email" id="email1" placeholder="Email" class="form-control" name= "email">
+                    </div>
+                </div>
+            
+                <div class="form-group">
+                    <label for="birthDate" class="col-sm-6 control-label">Date of Birth*</label>
+                    <div class="col-sm-9">
+                        <input type="date" id="dob" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="phoneNumber" class="col-sm-6 control-label">Phone number </label>
+                    <div class="col-sm-9">
+                        <input type="phoneNumber" id="Phone" placeholder="Phone number" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group"> 
+                  <label class="col-md-6 control-label">Sessions</label>
+                    <div class="col-md-6 selectContainer">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+                    <select name="department" id="sessions" class="form-control selectpicker">
+                      <option value="">Select your choose</option>
+                      <option>Beginer</option>
+                      <option>Intermediate</option>
+                      <option >Advance</option>
+                      
+                    </select>
+                  </div>
+                </div>
+                </div>
+                <div class="form-group">
+                  <label for="birthDate" class="col-sm-6 control-label">Starting date</label>
+                  <div class="col-sm-9">
+                      <input type="date" id="birthDate" class="form-control">
+                  </div>
+              </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-3">Gender</label>
+                    <div class="col-sm-6">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <label class="radio-inline">
+                                    <input type="radio" id="femaleRadio" value="Female">Female
+                                </label>
+                            </div>
+                            <div class="col-sm-4">
+                                <label class="radio-inline">
+                                    <input type="radio" id="maleRadio" value="Male">Male
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                
+        
+     
+              <button type="submit" class="btn btn-primary">Submit</button>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+               
+              </div> 
+            </form>
+        </div> 
       </div>
     </div>
+  </div>
   </div>
 
 
@@ -269,7 +346,7 @@
           <div class=" col-md-6 social ">
        
               
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3096.4287354489966!2d-76.85812128443243!3d39.0967081795404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7dd13df09d3a3%3A0xbb2b0c27203f2ab8!2sGiant+Food!5e0!3m2!1svi!2sus!4v1553568486931" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>		
+              <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3096.4287354489966!2d-76.85812128443243!3d39.0967081795404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7dd13df09d3a3%3A0xbb2b0c27203f2ab8!2sGiant+Food!5e0!3m2!1svi!2sus!4v1553568486931" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>		 -->
           
           
   </div>
@@ -281,10 +358,10 @@
       <div class="social-network ">
        
         <ul class="social-circle">
-           <li> <a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a>
-            <a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a>
+           <li> <a href="https://www.instagram.com" class="instar" title="Rss"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.facebook.com" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a>
             <a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a>
-            <a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a>
+            <a href="https://www.google.com" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a>
             <a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
         </ul>				
     
