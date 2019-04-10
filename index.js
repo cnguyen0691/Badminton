@@ -10,7 +10,7 @@ function insert_value() {
         method: "GET",
         dataType: "jsonp"
     });
-    $("#resetForm").reset();
+    $("#resetForm")[0].reset();
 }
 function contactAlert(e) {
     alert('We will get back to you soon')
@@ -35,11 +35,11 @@ function insert_value2() {
         dataType: "jsonp"
     });
     
-   
+    $("#registerform")[0].reset();
 }
 function registrationAlert(e) {
     alert('Congrats! Registered Successfully')
-    $("#registerform").reset();
+    
 }
 
 (jQuery,document,window);

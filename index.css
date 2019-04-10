@@ -96,31 +96,24 @@ h4{
   margin: 0 5px;
  
 }
-  .social-network a.icoRss:hover {
+  .social-network a.Instar:hover {
 	background-color: #F56505;
 }
-.social-network a.icoFacebook:hover {
+.social-network a.Facebook:hover {
 	background-color:#3B5998;
 }
-.social-network a.icoTwitter:hover {
+.social-network a.Twitter:hover {
 	background-color:#33ccff;
 }
-.social-network a.icoGoogle:hover {
+.social-network a.Google:hover {
 	background-color:#BD3518;
 }
-.social-network a.icoVimeo:hover {
-	background-color:#0590B8;
-}
-.social-network a.icoLinkedin:hover {
+
+.social-network a.Linkedin:hover {
 	background-color:#007bb7;
 }
-.social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
-.social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i {
-	color: lightblue;
-}
-a.socialIcon:hover, .socialHoverClass {
-	color: black;
-}
+
+
 
 .social-circle li a {
 	display:inline-block;
@@ -166,7 +159,7 @@ a.socialIcon:hover, .socialHoverClass {
   padding-bottom: 50px;
 }
 .contactus{
-  padding: 30px 0;
+  padding: 50px 0;
 }
 #join{
   padding: 30px 0;
