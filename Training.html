@@ -18,8 +18,8 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-lg ">
-    <a class="navbar-brand title"  href="#">Badminton Club</a>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top ">
+    <a class="navbar-brand title"  href="#">Badminton DMV Club</a>
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -29,7 +29,7 @@
               <a class="nav-link js-scroll-trigger" href="#About">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#Join">Training</a>
+              <a class="nav-link js-scroll-trigger" href="#join">Training</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#location">Location</a>
@@ -125,16 +125,9 @@
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
     </div>
-  
-  
-      <!-- START THE FEATURETTES -->
-  
-      <hr class="featurette-divider">
-
-  
 
   <!--Part 3: Service section-->
-    <div id="Join"><h1>Join Us!!!</h1></div>
+    <div id="join"><h1>Join Us</h1>
   <div class="card-deck mb-3 text-center">
       <div class="card mb-4 shadow-sm">
         <div class="card-header">
@@ -148,7 +141,7 @@
             <li>Group Training</li>
             <li>Beginer</li>
           </ul>
-          <button type="button" class="btn btn-lg btn-block btn-outline-primary" data-toggle="modal" data-target="#sessions">Register</button>
+          <button type="button" class="btn btn-block btn-secondary" data-toggle="modal" data-target="#sessions">Register</button>
         </div>
       </div>
       <div class="card mb-4 shadow-sm">
@@ -163,7 +156,7 @@
             <li>Group Training</li>
             <li>Intermediate</li>
           </ul>
-          <button type="button" class="btn btn-lg btn-block btn-outline-primary" data-toggle="modal" data-target="#sessions">Register</button>
+          <button type="button" class="btn btn-block btn-secondary" data-toggle="modal" data-target="#sessions">Register</button>
         </div>
       </div>
       <div class="card mb-4 shadow-sm">
@@ -178,11 +171,11 @@
             <li>Single Training</li>
             <li>Advance</li>
           </ul>
-          <button type="button" class="btn btn-lg btn-block btn-outline-primary" data-toggle="modal" data-target="#sessions">Register</button>
+          <button type="button" class="btn btn-block btn-secondary" data-toggle="modal" data-target="#sessions">Register</button>
         </div>
       </div>
     </div>
-
+    </div>
   
   <!-- Modal -->
   <div class="modal fade" id="sessions" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -197,7 +190,7 @@
         <div class="modal-body">
           <div class="container">
           <h2>Registration form</h2>
-          <form action="javascript:;" id="resetForm1" onsubmit="insert_value2()">
+          <form action="javascript:;" id="registerform" onsubmit="insert_value2()">
                 <div class="form-group">
                     <label for="firstname" class="col-sm-3 control-label">First Name</label>
                     <div class="col-sm-9">
@@ -226,7 +219,7 @@
                 <div class="form-group">
                     <label for="phoneNumber" class="col-sm-6 control-label">Phone number </label>
                     <div class="col-sm-9">
-                        <input type="phoneNumber" id="Phone" placeholder="Phone number" class="form-control">
+                        <input type="phoneNumber" id="phoneNumber" placeholder="Phone number" class="form-control">
                     </div>
                 </div>
                 <div class="form-group"> 
@@ -245,9 +238,9 @@
                 </div>
                 </div>
                 <div class="form-group">
-                  <label for="birthDate" class="col-sm-6 control-label">Starting date</label>
+                  <label for="dateStart" class="col-sm-6 control-label">Starting date</label>
                   <div class="col-sm-9">
-                      <input type="date" id="birthDate" class="form-control">
+                      <input type="date" id="dateStart" class="form-control">
                   </div>
               </div>
                 <div class="form-group">
@@ -291,42 +284,42 @@
       <h1>Location</h1>
         <!-- Example row of columns -->
         <div class="row">
-          <div class="col-md-4">
-            <h2>VARGINIA</h2>
+          <div class="contact-info col-md-4">
+            <h2>VIRGINIA</h2>
             <h4> Lindan</h4> 
            <p> Phone: (218)-999-9999<br>
             Email: badminton@yahoo.com<br>
             Hours: 8AM - 6PM
             </p>
-            <p><a class="btn btn-default" href="https://www.fairfaxcounty.gov/neighborhood-community-services/sites/neighborhood-community-services/files/assets/documents/calendars/providence%20community%20center%20calendar.pdf" target="_blank" type="application/pdf" role="button">View details &raquo;</a></p>
+            <p><a class="btn btn-secondary" href="https://www.fairfaxcounty.gov/neighborhood-community-services/sites/neighborhood-community-services/files/assets/documents/calendars/providence%20community%20center%20calendar.pdf" target="_blank" type="application/pdf" role="button">View details &raquo;</a></p>
           </div>
-          <div class="col-md-4">
+          <div class="contact-info col-md-4">
             <h2>MARYLAND</h2>
             <h4>Lee Chong Wei</h4>
              <p>Phone: (218)-999-9999<br>
               Email: badminton@yahoo.com<br>
               Hours: 8AM - 6PM</p>
-            <p><a class="btn btn-default" href="https://www.montgomerycountymd.gov/rec/Resources/Files/OpenGymSchedule.pdf" target="_blank" type="application/pdf" role="button">View details &raquo;</a></p>
+            <p><a class="btn btn-secondary" href="https://www.montgomerycountymd.gov/rec/Resources/Files/OpenGymSchedule.pdf" target="_blank" type="application/pdf" role="button">View details &raquo;</a></p>
           </div>
         
-        <div class="col-md-4">
+        <div class="contact-info col-md-4">
             <h2>WASHINGTON DC</h2>
             <h4>Momota </h4>
              <p> Phone: (218)-999-9999<br>
               Email: badminton@yahoo.com<br>
               Hours: 8AM - 6PM </p>
-            <p><a class="btn btn-default" href="https://www.montgomerycountymd.gov/rec/Resources/Files/OpenGymSchedule.pdf" target="_blank" type="application/pdf" role="button">View details &raquo;</a></p>
+            <p><a class="btn btn-secondary" href="https://www.montgomerycountymd.gov/rec/Resources/Files/OpenGymSchedule.pdf" target="_blank" type="application/pdf" role="button">View details &raquo;</a></p>
           </div>
         </div>
-        <hr>
+        
       </div>
       </div>
       
    <!--Contact Us-->   
-      <div class="container" id="form-control">
+      <div class="contactus container" id="form-control">
         <div class="row">
           <div class="col-md-6">
-        <h1>Contact Us</h1>  
+        <h1> Contact Us</h1>  
         <form action="javascript:;" id="resetForm" onsubmit="insert_value()">
           <div class="form-group">
            <label for="name">Name</label>
@@ -340,13 +333,13 @@
               <label for="exampleFormControlTextarea1" >Description</label>
               <textarea class="form-control" id="description" rows="3"></textarea>
             </div>
-            <button type="submit" class="btn btn-primary">Send Message</button>
+            <button type="submit" class="btn btn-secondary">Send Message</button>
           </form>
           </div>
           <div class=" col-md-6 social ">
        
               
-              <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3096.4287354489966!2d-76.85812128443243!3d39.0967081795404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7dd13df09d3a3%3A0xbb2b0c27203f2ab8!2sGiant+Food!5e0!3m2!1svi!2sus!4v1553568486931" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>		 -->
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3096.4287354489966!2d-76.85812128443243!3d39.0967081795404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7dd13df09d3a3%3A0xbb2b0c27203f2ab8!2sGiant+Food!5e0!3m2!1svi!2sus!4v1553568486931" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>		
           
           
   </div>
@@ -367,7 +360,7 @@
     
     
     </div>
-    <hr>
+    
    
 
     <footer>

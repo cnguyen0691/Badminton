@@ -7,13 +7,11 @@ body{
 h1{
     font-family: 'Roboto', sans-serif;
     font-size: 48px;  
-    padding: 15px 0;
     text-align: center;
-    color: lightblue;
 }
 h2{
   text-align: center;
-  
+  padding: 25px 0;
 }
 h4{
   font-size: 13;
@@ -25,6 +23,7 @@ h4{
 
 .marketing {
     background-color: #fcfaf3;
+    padding: 30px 0;
 }
 
 .marketing .col-lg-4 {
@@ -41,6 +40,7 @@ h4{
   
   .location{
     background-color:#fcfaf3;
+    padding: 30px 0;
   }
 
   
@@ -162,4 +162,12 @@ a.socialIcon:hover, .socialHoverClass {
   transition: all 0.8s;
   
 }
-
+.contact-info{
+  padding-bottom: 50px;
+}
+.contactus{
+  padding: 30px 0;
+}
+#join{
+  padding: 30px 0;
+}
