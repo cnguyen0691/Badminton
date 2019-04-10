@@ -3,7 +3,7 @@ function insert_value() {
     var name = $("#name").val();
     var email = $("#email").val();
     var description = $("#description").val();
-    var url = script_url + "?callback=ctrlq&name=" + name + "&email=" + email + "&description=" + description + "&action=insert";
+    var url = script_url + "?callback=contactAlert&name=" + name + "&email=" + email + "&description=" + description + "&action=insert";
     var request = jQuery.ajax({
         crossDomain: true,
         url: url,
@@ -12,7 +12,7 @@ function insert_value() {
     });
     $("#resetForm").reset();
 }
-function ctrlq(e) {
+function contactAlert(e) {
     alert('We will get back to you soon')
 }
 
@@ -27,7 +27,7 @@ function insert_value2() {
     var dob = $("#dob").val();
     var phoneNumber = $("#phoneNumber").val();
     var sessions = $("#sessions option:selected").val();
-    var url1 = script_url1 + "?callback=ctrlq&firstname=" + firstname + "&lastName=" + lastname + "&email1=" + email1 + "&dob=" + dob + "&phoneNumber=" + phoneNumber + "&sessions=" + sessions + "&action=insert";
+    var url1 = script_url1 + "?callback=registrationAlert&firstname=" + firstname + "&lastName=" + lastname + "&email1=" + email1 + "&dob=" + dob + "&phoneNumber=" + phoneNumber + "&sessions=" + sessions + "&action=insert";
     var request1 = jQuery.ajax({
         crossDomain: true,
         url: url1,
@@ -37,7 +37,7 @@ function insert_value2() {
     
    
 }
-function ctrlq(e) {
+function registrationAlert(e) {
     alert('Congrats! Registered Successfully')
     $("#registerform").reset();
 }
