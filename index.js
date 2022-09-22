@@ -41,5 +41,4 @@ function registrationAlert(e) {
     alert('Congrats! Registered Successfully')
     
 }
-
 (jQuery,document,window);

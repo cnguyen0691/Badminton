@@ -78,83 +78,34 @@ h4{
     min-width: 220px;
   }
 
-
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
   
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
   
-.social-network {
-	display: inline;
-  list-style-type: none;
-  padding-top: 50px;
-  text-align: center;
+  /* Set a specific color for each brand */
   
-}
-.social-circle{
-  padding-top: 50px;
-}
-.social-network li {
-	display: inline-block;
-  margin: 0 5px;
- 
-}
-  .social-network a.Instar:hover {
-	background-color: #F56505;
-}
-.social-network a.Facebook:hover {
-	background-color:#3B5998;
-}
-.social-network a.Twitter:hover {
-	background-color:#33ccff;
-}
-.social-network a.Google:hover {
-	background-color:#BD3518;
-}
-
-.social-network a.Linkedin:hover {
-	background-color:#007bb7;
-}
-
-
-
-.social-circle li a {
-	display:inline-block;
-	position:relative;
-	margin:0 auto 0 auto;
-	-moz-border-radius:50%;
-	-webkit-border-radius:50%;
-	border-radius:50%;
-	text-align:center;
-	width: 50px;
-	height: 50px;
-    font-size:20px;
-    background-color: lightskyblue;
-}
-.social-circle li i {
-	margin:0;
-	line-height:50px;
-  text-align: center;
- 
-}
-
-.social-circle li a:hover i, .triggeredHover {
-	-moz-transform: rotate(360deg);
-	-webkit-transform: rotate(360deg);
-	-ms--transform: rotate(360deg);
-	transform: rotate(360deg);
-	-webkit-transition: all 0.2s;
-	-moz-transition: all 0.2s;
-	-o-transition: all 0.2s;
-	-ms-transition: all 0.2s;
-	transition: all 0.2s;
-}
-.social-circle i {
-	color: white;
-	-webkit-transition: all 0.8s;
-	-moz-transition: all 0.8s;
-	-o-transition: all 0.8s;
-	-ms-transition: all 0.8s;
-  transition: all 0.8s;
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
   
-}
+  /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+
 .contact-info{
   padding-bottom: 50px;
 }
@@ -172,3 +123,164 @@ h4{
 .formReset{
   padding: 25px;
 }
+
+
+  .container {
+      padding-bottom: 0 !important;
+  }
+
+  
+
+      .div1 {
+          padding-left: 10px;
+      }
+
+      #btn1, #btn2, #btn3, #btn4, #btn5 {
+          cursor: pointer;
+          font-size: 25px;
+      }
+
+      .container-fluid {
+          padding-right: 0 !important;
+          padding-left: 0 !important;
+      }
+
+      .callout-image {
+          padding-top: 35px;
+      }
+
+      .callout-image-text {
+          padding-top: 160px;
+          justify-content: center;
+          align-items: center;
+      }
+
+      .imagePadding .textImage h5 {
+          color: white;
+      }
+
+      .imagePadding {
+          padding-top: 80px;
+      }
+
+      .imagePadding .textImage p {
+          font-size: 15px;
+      }
+
+      .imageCollape {
+          margin-top: -149px;
+      }
+
+      .products-arrow {
+          width: 10px;
+      }
+
+      .textImage {
+          padding-top: 50px;
+          color: white;
+      }
+
+      .textImage ul {
+          list-style-type: none;
+          list-style-position: inside;
+          padding-left: 0;
+      }
+
+
+      .textImage span::before {
+          display: inline-block;
+          content: '';
+          height: 0.5rem;
+          width: 0.5rem;
+      }
+
+      .textImage span.active::before {
+          -webkit-border-radius: .5em;
+          border-radius: .5em;
+          margin-left: -1em;
+          margin-right: 20px;
+          background-color:green;
+      }
+
+      .textImage span.active {
+          font-style: italic;
+      }
+
+      .textImage li {
+          padding-bottom: 20px;
+      }
+
+      .textProduct {
+          padding-left: 80px !important;
+      }
+
+      li a {
+          color: white;
+      }
+
+      li a:hover {
+          color: white;
+      }
+
+      .licenseProduct {
+          padding: 50px 0;
+      }
+
+     
+
+      span {
+          padding-bottom: 30px;
+      }
+
+      @media (max-width: 1024px) {
+          .pageView {
+              padding-left: 0px;
+              padding-right: 0px;
+          }
+
+          .imageCollape {
+              margin-top: -155px;
+          }
+
+          .textProduct {
+              padding-left: 16px !important;
+          }
+
+          .textImage li {
+              padding-bottom: 0px;
+          }
+      }
+
+      @media (max-width: 768px) {
+          #btn1, #btn2, #btn3, #btn4, #btn5 {
+              font-size: 18px;
+          }
+
+          .imageCollape {
+              margin-top: -20px;
+          }
+
+          .textProduct {
+              padding-left: 19px !important;
+          }
+
+          .textImage {
+              padding-top: 0px;
+          }
+      }
+
+      @media (max-width: 540px) {
+          .colReverse{
+              flex-direction: column-reverse;
+          }
+          .callout-image-text,
+          .imagePadding{
+              padding-top: 20px;
+              padding-bottom: 20px;
+          }
+
+          .textProduct {
+              padding-top: 20px;
+          }
+      }
+  
